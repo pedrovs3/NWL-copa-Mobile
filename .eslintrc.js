@@ -6,16 +6,17 @@ module.exports = {
   extends: [
     'airbnb-base',
     'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
   ],
-  parser: '',
+  parser: '@typescript-eslint/parser',
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: '@typescript-eslint/parser',
   },
   plugins: [
     'react',
+    '@typescript-eslint',
   ],
   rules: {
     'no-use-before-define': 'off',
@@ -26,5 +27,6 @@ module.exports = {
     camelcase: 'off',
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
+    'import/no-extraneous-dependencies': 'off',
   },
 };
