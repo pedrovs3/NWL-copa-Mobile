@@ -25,5 +25,6 @@ module.exports = {
     'import/prefer-default-export': 'off',
     camelcase: 'off',
     'import/extensions': 'off',
+    'import/no-unresolved': 'off',
   },
 };
