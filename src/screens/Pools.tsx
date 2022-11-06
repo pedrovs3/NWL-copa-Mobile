@@ -62,7 +62,8 @@ export function Pools() {
         isLoading ? <Loading/> : <FlatList
           data={pools}
           keyExtractor={(item) => item.id}
-          renderItem={({ item }) => <PoolCard data={item}/>}
+          renderItem={({ item }) => <PoolCard data={item}
+                                            onPress={() => navigate('details', { id: item.id })}/>}
           px={5}
           showsVerticalScrollIndicator={false}
           _contentContainerStyle={{ pb: 10 }}

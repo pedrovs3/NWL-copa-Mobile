@@ -28,5 +28,7 @@ module.exports = {
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
     'import/no-extraneous-dependencies': 'off',
+    'consistent-return': 'off',
+    'no-underscore-dangle': 'off',
   },
 };
